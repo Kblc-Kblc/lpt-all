@@ -790,6 +790,257 @@ animate({
 			Element.prototype.msMatchesSelector;
 	}
 })();
+function initMoreLess() {
+  let showMoreBtn = document.querySelector(".show-more__btn");
+  let hiddenContent = document.querySelector(".show-more");
+  
+  // Check to see if the button and hidden panel is present.
+  if ( (typeof showMoreBtn != "undefined" && showMoreBtn != null) && (typeof hiddenContent != "undefined" && hiddenContent != null) ){
+
+    // Slide Up
+    let slideUp = (target, duration) => {
+      target.style.transitionDuration = duration + "ms"; // Set transition duration
+      target.style.height = target.offsetHeight + "px"; // Get height of the block and add inline CSS
+      target.offsetHeight; // Get the actual height of the block
+      target.style.height = 0; // Set CSS inline to 0px
+      showMoreBtn.innerHTML = "Подробнее <i class='fas fa-angle-down'></i>";
+
+      // Remove inline styles from the element
+      window.setTimeout(() => {
+        target.style.display = "none";
+        target.style.removeProperty("height");
+        target.style.removeProperty("transition-duration");
+      }, duration);
+    };
+
+    let slideDown = (target, duration) => {
+      let display = window.getComputedStyle(target).display;
+
+      if (display === "none") {
+        display = "block";
+      }
+
+      target.style.display = display;
+      target.style.transitionDuration = duration + "ms";
+
+      let height = target.offsetHeight;
+      target.style.height = 0;
+      target.offsetHeight;
+      target.style.height = height + "px";
+      showMoreBtn.innerHTML = "Закрыть <i class='fas fa-angle-up'></i>";
+
+      window.setTimeout(() => {
+        target.style.removeProperty("height");
+        target.style.removeProperty("transition-duration");
+      }, duration);
+    };
+
+    let slideToggle = (target, duration) => {
+      if (window.getComputedStyle(target).display === "none") {
+        return slideDown(target, duration);
+      } else {
+        return slideUp(target, duration);
+      }
+    };
+
+    showMoreBtn.addEventListener("click", () => {
+      slideToggle(hiddenContent, 500);
+    });
+  }
+
+}
+
+
+
+
+
+function initMoreLessTwo() {
+  let showMoreBtn = document.querySelector(".show-more__btn_two");
+  let hiddenContent = document.querySelector(".show-more_two");
+  
+  // Check to see if the button and hidden panel is present.
+  if ( (typeof showMoreBtn != "undefined" && showMoreBtn != null) && (typeof hiddenContent != "undefined" && hiddenContent != null) ){
+
+    // Slide Up
+    let slideUp = (target, duration) => {
+      target.style.transitionDuration = duration + "ms"; // Set transition duration
+      target.style.height = target.offsetHeight + "px"; // Get height of the block and add inline CSS
+      target.offsetHeight; // Get the actual height of the block
+      target.style.height = 0; // Set CSS inline to 0px
+      showMoreBtn.innerHTML = "Подробнее <i class='fas fa-angle-down'></i>";
+
+      // Remove inline styles from the element
+      window.setTimeout(() => {
+        target.style.display = "none";
+        target.style.removeProperty("height");
+        target.style.removeProperty("transition-duration");
+      }, duration);
+    };
+
+    let slideDown = (target, duration) => {
+      let display = window.getComputedStyle(target).display;
+
+      if (display === "none") {
+        display = "block";
+      }
+
+      target.style.display = display;
+      target.style.transitionDuration = duration + "ms";
+
+      let height = target.offsetHeight;
+      target.style.height = 0;
+      target.offsetHeight;
+      target.style.height = height + "px";
+      showMoreBtn.innerHTML = "Закрыть <i class='fas fa-angle-up'></i>";
+
+      window.setTimeout(() => {
+        target.style.removeProperty("height");
+        target.style.removeProperty("transition-duration");
+      }, duration);
+    };
+
+    let slideToggle = (target, duration) => {
+      if (window.getComputedStyle(target).display === "none") {
+        return slideDown(target, duration);
+      } else {
+        return slideUp(target, duration);
+      }
+    };
+
+    showMoreBtn.addEventListener("click", () => {
+      slideToggle(hiddenContent, 500);
+    });
+  }
+
+}
+
+
+function initMoreLessThree() {
+  let showMoreBtn = document.querySelector(".show-more__btn_three");
+  let hiddenContent = document.querySelector(".show-more_three");
+  
+  // Check to see if the button and hidden panel is present.
+  if ( (typeof showMoreBtn != "undefined" && showMoreBtn != null) && (typeof hiddenContent != "undefined" && hiddenContent != null) ){
+
+    // Slide Up
+    let slideUp = (target, duration) => {
+      target.style.transitionDuration = duration + "ms"; // Set transition duration
+      target.style.height = target.offsetHeight + "px"; // Get height of the block and add inline CSS
+      target.offsetHeight; // Get the actual height of the block
+      target.style.height = 0; // Set CSS inline to 0px
+      showMoreBtn.innerHTML = "Подробнее <i class='fas fa-angle-down'></i>";
+
+      // Remove inline styles from the element
+      window.setTimeout(() => {
+        target.style.display = "none";
+        target.style.removeProperty("height");
+        target.style.removeProperty("transition-duration");
+      }, duration);
+    };
+
+    let slideDown = (target, duration) => {
+      let display = window.getComputedStyle(target).display;
+
+      if (display === "none") {
+        display = "block";
+      }
+
+      target.style.display = display;
+      target.style.transitionDuration = duration + "ms";
+
+      let height = target.offsetHeight;
+      target.style.height = 0;
+      target.offsetHeight;
+      target.style.height = height + "px";
+      showMoreBtn.innerHTML = "Закрыть <i class='fas fa-angle-up'></i>";
+
+      window.setTimeout(() => {
+        target.style.removeProperty("height");
+        target.style.removeProperty("transition-duration");
+      }, duration);
+    };
+
+    let slideToggle = (target, duration) => {
+      if (window.getComputedStyle(target).display === "none") {
+        return slideDown(target, duration);
+      } else {
+        return slideUp(target, duration);
+      }
+    };
+
+    showMoreBtn.addEventListener("click", () => {
+      slideToggle(hiddenContent, 500);
+    });
+  }
+
+}
+
+
+function initMoreLessFour() {
+  let showMoreBtn = document.querySelector(".show-more__btn_four");
+  let hiddenContent = document.querySelector(".show-more_four");
+  
+  // Check to see if the button and hidden panel is present.
+  if ( (typeof showMoreBtn != "undefined" && showMoreBtn != null) && (typeof hiddenContent != "undefined" && hiddenContent != null) ){
+
+    // Slide Up
+    let slideUp = (target, duration) => {
+      target.style.transitionDuration = duration + "ms"; // Set transition duration
+      target.style.height = target.offsetHeight + "px"; // Get height of the block and add inline CSS
+      target.offsetHeight; // Get the actual height of the block
+      target.style.height = 0; // Set CSS inline to 0px
+      showMoreBtn.innerHTML = "Подробнее <i class='fas fa-angle-down'></i>";
+
+      // Remove inline styles from the element
+      window.setTimeout(() => {
+        target.style.display = "none";
+        target.style.removeProperty("height");
+        target.style.removeProperty("transition-duration");
+      }, duration);
+    };
+
+    let slideDown = (target, duration) => {
+      let display = window.getComputedStyle(target).display;
+
+      if (display === "none") {
+        display = "block";
+      }
+
+      target.style.display = display;
+      target.style.transitionDuration = duration + "ms";
+
+      let height = target.offsetHeight;
+      target.style.height = 0;
+      target.offsetHeight;
+      target.style.height = height + "px";
+      showMoreBtn.innerHTML = "Закрыть <i class='fas fa-angle-up'></i>";
+
+      window.setTimeout(() => {
+        target.style.removeProperty("height");
+        target.style.removeProperty("transition-duration");
+      }, duration);
+    };
+
+    let slideToggle = (target, duration) => {
+      if (window.getComputedStyle(target).display === "none") {
+        return slideDown(target, duration);
+      } else {
+        return slideUp(target, duration);
+      }
+    };
+
+    showMoreBtn.addEventListener("click", () => {
+      slideToggle(hiddenContent, 500);
+    });
+  }
+}
+
+
+
+initMoreLess();
+initMoreLessTwo();
+initMoreLessThree();
+initMoreLessFour();
 
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');

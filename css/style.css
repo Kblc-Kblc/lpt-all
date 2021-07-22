@@ -154,14 +154,17 @@ body._lock {
 }
 
 .btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0px 0px;
-}
-
-.btn._fw {
-  width: 100%;
+  margin: 35px 0 0 0;
+  border: 2px solid #ffe927;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2c7135;
+  padding: 15px 82px;
 }
 
 .select {
@@ -971,6 +974,13 @@ body.ie ._ibg img {
 .hover-qustion {
   display: none;
   width: 338px;
+  background: #ffffff;
+  opacity: 1;
+  text-align: center;
+  -webkit-box-shadow: 0px 8px 24px -7px rgba(44, 113, 53, 0.15);
+          box-shadow: 0px 8px 24px -7px rgba(44, 113, 53, 0.15);
+  border-radius: 15px;
+  padding: 25px 15px;
 }
 
 .hover-qustion P {
@@ -981,12 +991,16 @@ body.ie ._ibg img {
   /* or 125% */
   text-align: center;
   color: #2c7135;
-  background: #ffffff;
-  opacity: 1;
-  -webkit-box-shadow: 0px 8px 24px -7px rgba(44, 113, 53, 0.15);
-          box-shadow: 0px 8px 24px -7px rgba(44, 113, 53, 0.15);
-  border-radius: 15px;
-  padding: 25px 15px;
+}
+
+.link-hover {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+  text-align: center;
+  color: #2c7135;
 }
 
 .link-hv:hover .hover-qustion {
@@ -1002,6 +1016,7 @@ body.ie ._ibg img {
 
 .footer {
   background-color: #2c7135;
+  padding: 19px 0px 19px 0px;
 }
 
 .footer__row {
@@ -1126,6 +1141,10 @@ body.ie ._ibg img {
   color: #2c7135;
 }
 
+.info-advertising__text_white p span {
+  font-size: 70px;
+}
+
 .info-advertising__text_yellow {
   margin: auto;
   position: absolute;
@@ -1150,6 +1169,10 @@ body.ie ._ibg img {
           box-shadow: 0px 8px 40px 3px #634e07;
   border-radius: 15px;
   padding: 10px 0px;
+}
+
+.info-advertising__text_yellow p span {
+  font-size: 20px;
 }
 
 .info-advertising__text_transparent {
@@ -1220,10 +1243,10 @@ body.ie ._ibg img {
 }
 
 ._no-webp .bio{
-  background: url("../img/section2/logo.png") center no-repeat; }
+  background: url("../img/section2/logo.png") 50% 180px no-repeat; }
 
 .bio {
-  padding: 0px 0px 65px 0px;
+  padding: 180px 0px 65px 0px;
 }
 
 .bio__title {
@@ -1326,8 +1349,52 @@ body.ie ._ibg img {
   color: #2c7135;
 }
 
-.advantages {
-  padding: 0px 0px 40px 0px;
+.show-more__btn_two {
+  margin: 35px 132px 0px 0px;
+}
+
+.show-more {
+  display: none;
+  /*   padding-bottom: 15px; */
+  /*   transition: height 5s ease; */
+  -webkit-transition-property: height, margin, padding;
+  -o-transition-property: height, margin, padding;
+  transition-property: height, margin, padding;
+  /*   transition-duration: 200ms; */
+  overflow: hidden;
+}
+
+.show-more_two {
+  display: none;
+  /*   padding-bottom: 15px; */
+  /*   transition: height 5s ease; */
+  -webkit-transition-property: height, margin, padding;
+  -o-transition-property: height, margin, padding;
+  transition-property: height, margin, padding;
+  /*   transition-duration: 200ms; */
+  overflow: hidden;
+}
+
+.show-more_three {
+  display: none;
+  /*   padding-bottom: 15px; */
+  /*   transition: height 5s ease; */
+  -webkit-transition-property: height, margin, padding;
+  -o-transition-property: height, margin, padding;
+  transition-property: height, margin, padding;
+  /*   transition-duration: 200ms; */
+  overflow: hidden;
+}
+
+.show-more_four {
+  display: none;
+  /*   padding-bottom: 15px; */
+  /*   transition: height 5s ease; */
+  -webkit-transition-property: height, margin, padding;
+  -o-transition-property: height, margin, padding;
+  transition-property: height, margin, padding;
+  /*   transition-duration: 200ms; */
+  overflow: hidden;
 }
 
 .advantages__title {
@@ -1424,6 +1491,15 @@ body.ie ._ibg img {
   /* identical to box height, or 150% */
   color: #2c7135;
   padding: 15px 82px;
+}
+
+.block-hide {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+  color: #2c7135;
 }
 
 .show-hide-text {
@@ -1798,7 +1874,7 @@ body.ie ._ibg img {
   position: absolute;
   right: 0;
   top: 72%;
-  z-index: 95;
+  z-index: 3;
   cursor: pointer;
 }
 
@@ -1806,7 +1882,7 @@ body.ie ._ibg img {
   position: absolute;
   left: 0;
   top: 72%;
-  z-index: 95;
+  z-index: 3;
   cursor: pointer;
 }
 
@@ -1817,7 +1893,7 @@ body.ie ._ibg img {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 90;
+  z-index: 3;
 }
 
 .swiper-pagination-bullet {
@@ -1846,6 +1922,86 @@ body.ie ._ibg img {
 
   .checkbox a:hover {
     text-decoration: none;
+  }
+}
+
+@media (min-width: 1500px) {
+  .footer {
+    padding: 54px 0px 54px 0px;
+  }
+
+  .footer-top p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .footer-mid p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .footer-bot p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .info-advertising__text_white {
+    left: -20%;
+    bottom: 15%;
+  }
+
+  .info-advertising__text_white img {
+    width: 923px;
+    height: 304px;
+  }
+
+  .info-advertising__text_white p span {
+    font-size: 100px;
+  }
+
+  .bio__text p {
+    text-align: center;
+    max-width: 941px;
+  }
+
+  .bio-info-body__img img {
+    max-width: 124px;
+    max-height: 141px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .bio-info-body__text p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .products__title img {
+    height: 155px;
+    width: 395px;
+  }
+
+  .products__title h2 {
+    left: 38%;
+    top: 19%;
+    font-size: 72px;
+    line-height: 91px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .advertising-abs__shamp {
+    left: -6%;
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .advertising-abs__shamp {
+    width: 220px;
+    height: 150px;
+    left: -2%;
   }
 }
 
@@ -1917,6 +2073,7 @@ body.ie ._ibg img {
         -ms-flex-pack: start;
             justify-content: start;
     position: relative;
+    z-index: 200;
     position: fixed;
     top: 6%;
     right: 0%;
@@ -1927,7 +2084,6 @@ body.ie ._ibg img {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     border-radius: 10px 0px 0px 10px;
-    z-index: 90;
     visibility: hidden;
     margin: 0px 0px 0px 0px;
   }
@@ -1965,23 +2121,23 @@ body.ie ._ibg img {
   .hover-qustion P {
     font-size: 18px;
     line-height: 26px;
-    max-width: 274px;
+    max-width: 300px;
   }
 
   .link-hv:hover .hover-qustion {
     top: 131%;
-    right: -511%;
+    right: -520%;
   }
 
   .icon-menu {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 18px;
     right: 10px;
     width: 30px;
     height: 20px;
     cursor: pointer;
-    z-index: 5;
+    z-index: 200;
   }
 
   .icon-menu span {
@@ -2083,6 +2239,10 @@ body.ie ._ibg img {
     width: 300px;
   }
 
+  .info-advertising__text_white p span {
+    font-size: 32px;
+  }
+
   .info-advertising__text_white p {
     font-size: 22px;
     line-height: 32px;
@@ -2099,6 +2259,11 @@ body.ie ._ibg img {
     max-width: 268px;
     padding: 10px 30px;
     margin: 0px auto;
+  }
+
+  .info-advertising__text_yellow p span {
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .info-advertising__text_transparent {
@@ -2122,6 +2287,7 @@ body.ie ._ibg img {
 
   .bio {
     background: #fff !important;
+    padding: 20px 0px 65px 0px;
   }
 
   .bio-info__top {
@@ -2185,8 +2351,19 @@ body.ie ._ibg img {
             align-items: start;
   }
 
-  .footer__logo {
-    padding: 10px 0px;
+  .footer-top p {
+    font-size: 9px;
+    line-height: 9px;
+  }
+
+  .footer-mid p {
+    font-size: 9px;
+    line-height: 9px;
+  }
+
+  .footer-bot p {
+    font-size: 9px;
+    line-height: 9px;
   }
 
   .bio__title p {
@@ -2208,6 +2385,13 @@ body.ie ._ibg img {
   .body-advantages-content__title h4 {
     font-size: 30px;
     line-height: 38px;
+  }
+
+  .block-hide {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   .show-hide-text a {
@@ -2396,7 +2580,7 @@ body.ie ._ibg img {
 
 ._webp .advertising{ background: url(../img/bg2.webp) center no-repeat; }
 
-._webp .bio{ background: url(../img/section2/logo.webp) center no-repeat; }
+._webp .bio{ background: url(../img/section2/logo.webp) 50% 180px no-repeat; }
 
 ._webp .title-icons_one:after{ background: url(../img/icons/icon1.webp) right no-repeat; }
 
