@@ -1922,11 +1922,10 @@ body.ie ._ibg img {
 .slider-pagging {
   position: absolute;
   bottom: -20%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  left: 0;
   z-index: 3;
+  width: 100%;
+  text-align: center;
 }
 
 .swiper-pagination-bullet {
@@ -2123,6 +2122,10 @@ body.ie ._ibg img {
   .advantages__title h3 {
     font-size: 72px;
     line-height: 91px;
+  }
+
+  .products {
+    padding: 0px 0px 48% 0px;
   }
 
   .products__title img {
@@ -2663,12 +2666,6 @@ body.ie ._ibg img {
   .products__title h2 {
     top: 49%;
     left: 35%;
-  }
-
-  .slider-pagging {
-    width: 100%;
-    bottom: -18%;
-    left: 62%;
   }
 }
 

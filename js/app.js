@@ -87,7 +87,13 @@ function menu_close() {
 let menuBody = document.querySelector(".header__list");
 
 menuBody.addEventListener("click", function (e) {
-	menuBody.classList.remove("_active");
+	
+		menuBody.classList.remove("_active");
+	iconMenu.classList.remove("_active");
+	let body = document.querySelector("body");
+	body.classList.remove("_lock");
+	
+	
 });
 
 
@@ -2092,7 +2098,7 @@ let slider_about = new Swiper('.products-slider', {
 	observeParents: true,
 	slidesPerView: 3,
 	spaceBetween: 0,
-	autoHeight: true,
+	// autoHeight: true,
 	speed: 800,
 	centeredSlides: true,
 	initialSlide: 2,
@@ -2119,16 +2125,20 @@ let slider_about = new Swiper('.products-slider', {
 			autoHeight: true,
 		},
 		768: {
-			slidesPerView: 2,
+			slidesPerView: 1,
 			spaceBetween: 20,
 		},
 		992: {
-			slidesPerView: 2,
-			spaceBetween: 20,
+			slidesPerView: 3,
+			spaceBetween: 10,
 		},
 		1268: {
 			slidesPerView: 3,
-			spaceBetween: 30,
+			spaceBetween: 0,
+		},
+		1500: {
+			slidesPerView: 3,
+			spaceBetween: 0,
 		},
 	},
 	
