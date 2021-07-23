@@ -962,20 +962,16 @@ body.ie ._ibg img {
   color: #2c7135;
 }
 
-.link-hv {
-  margin: 28px 0px 0px -55px;
-  cursor: pointer;
-}
-
-.mob-block-header {
-  position: relative;
+.hvlink:after {
+  content: "";
+  background: url("../img/icons/ques.svg") right no-repeat;
+  padding: 10px 0px 7px 50px;
 }
 
 .hover-qustion {
   display: none;
   width: 338px;
   background: #ffffff;
-  opacity: 1;
   text-align: center;
   -webkit-box-shadow: 0px 8px 24px -7px rgba(44, 113, 53, 0.15);
           box-shadow: 0px 8px 24px -7px rgba(44, 113, 53, 0.15);
@@ -994,6 +990,7 @@ body.ie ._ibg img {
 }
 
 .link-hover {
+  display: block;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1003,11 +1000,15 @@ body.ie ._ibg img {
   color: #2c7135;
 }
 
-.link-hv:hover .hover-qustion {
+.hover-qustion:hover {
+  display: block;
+}
+
+.hvlink:hover ~ .hover-qustion {
   display: block;
   position: absolute;
-  top: 65%;
-  right: 0;
+  top: 54%;
+  right: 4%;
 }
 
 .icon-menu {
@@ -2172,10 +2173,6 @@ body.ie ._ibg img {
     max-width: 970px;
   }
 
-  .link-hv {
-    margin: 28px 0px 0px -29px;
-  }
-
   .abs-advertising__item_four {
     right: 22%;
     top: 21%;
@@ -2285,13 +2282,6 @@ body.ie ._ibg img {
     max-width: 291px;
   }
 
-  .link-hv {
-    margin: 0px 0px 0px 0px;
-    position: absolute;
-    right: -28%;
-    bottom: 49%;
-  }
-
   .hover-qustion {
     width: 300px;
   }
@@ -2302,9 +2292,9 @@ body.ie ._ibg img {
     max-width: 300px;
   }
 
-  .link-hv:hover .hover-qustion {
-    top: 131%;
-    right: -520%;
+  .hvlink:hover ~ .hover-qustion {
+    top: 38%;
+    right: 43%;
   }
 
   .icon-menu {
@@ -2670,8 +2660,14 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 479.98px) {
+  .hvlink:hover ~ .hover-qustion {
+    top: 40%;
+    right: 3%;
+  }
+
   ._no-webp .advertising{
     background: url("../img/bgmob.png") center no-repeat; }
+
   .advertising {
     background-size: cover !important;
   }
