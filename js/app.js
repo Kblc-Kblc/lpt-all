@@ -2094,6 +2094,8 @@ let slider_about = new Swiper('.products-slider', {
 	spaceBetween: 0,
 	autoHeight: true,
 	speed: 800,
+	centeredSlides: true,
+	initialSlide: 2,
 	//touchRatio: 0,
 	//simulateTouch: false,
 	//loop: true,

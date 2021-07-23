@@ -1941,6 +1941,18 @@ body.ie ._ibg img {
   background-color: #2c7135 !important;
 }
 
+.swiper-slide-active {
+  opacity: 1;
+}
+
+.swiper-slide-active img {
+  height: 300px;
+  width: 150px;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (min-width: 991.98px) {
   .quantity__button:hover::before,
   .quantity__button:hover::after {
