@@ -1079,11 +1079,11 @@ body.ie ._ibg img {
 }
 
 ._no-webp .advertising{
-  background: url("../img/bg2.png") center no-repeat; }
+  background: url("../img/bgdesc.png") center no-repeat; }
 
 .advertising {
   min-height: 100%;
-  height: 1839px;
+  height: 1199px;
   z-index: 3;
 }
 
@@ -1092,28 +1092,56 @@ body.ie ._ibg img {
   position: relative;
 }
 
+.desk {
+  display: none;
+}
+
+.descbig {
+  display: block;
+}
+
 .abs-advertising__item_one {
   position: absolute;
-  left: 8%;
-  top: 10%;
+  left: 18%;
+  top: 2%;
+}
+
+.abs-advertising__item_one img {
+  width: 303px;
+  height: 269px;
 }
 
 .abs-advertising__item_two {
   position: absolute;
-  right: 7%;
-  top: 13%;
+  right: 20%;
+  top: 3%;
+}
+
+.abs-advertising__item_two img {
+  width: 259px;
+  height: 273px;
 }
 
 .abs-advertising__item_three {
   position: absolute;
-  left: 9%;
-  top: 30%;
+  left: 18%;
+  top: 23%;
+}
+
+.abs-advertising__item_three img {
+  width: 207px;
+  height: 207px;
 }
 
 .abs-advertising__item_four {
   position: absolute;
-  right: 32%;
-  top: 37%;
+  right: 34%;
+  top: 21%;
+}
+
+.abs-advertising__item_four img {
+  width: 290px;
+  height: 248px;
 }
 
 .mob-img {
@@ -1122,8 +1150,8 @@ body.ie ._ibg img {
 
 .info-advertising__text_white {
   position: absolute;
-  left: 9%;
-  bottom: 15%;
+  left: 1%;
+  bottom: 47%;
 }
 
 .info-advertising__text_white p {
@@ -1148,7 +1176,7 @@ body.ie ._ibg img {
 .info-advertising__text_yellow {
   margin: auto;
   position: absolute;
-  bottom: 8%;
+  bottom: 41%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1160,7 +1188,7 @@ body.ie ._ibg img {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 26px;
   /* or 167% */
   text-align: center;
   color: #0b6117;
@@ -1179,7 +1207,7 @@ body.ie ._ibg img {
   width: 100%;
   margin: auto;
   position: absolute;
-  bottom: 1%;
+  bottom: 35%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1195,6 +1223,7 @@ body.ie ._ibg img {
   text-align: center;
   color: #ffffff;
   text-shadow: 0px 7px 29px rgba(41, 41, 47, 0.8);
+  padding: 0px 0px 5px 0px;
 }
 
 .advertising-text_bottom {
@@ -1214,31 +1243,31 @@ body.ie ._ibg img {
 
 .advertising-abs__shamp {
   position: absolute;
-  bottom: 0;
+  bottom: 32%;
   left: -10%;
 }
 
 .advertising-abs__boy {
   position: absolute;
-  bottom: 0;
+  bottom: 36%;
   right: 0;
 }
 
 .advertising-abs__buterfly_one {
   position: absolute;
-  bottom: 30%;
+  bottom: 58%;
   left: 0;
 }
 
 .advertising-abs__buterfly_two {
   position: absolute;
-  bottom: 35%;
-  left: 15%;
+  bottom: 59%;
+  left: 30%;
 }
 
 .advertising-abs__buterfly_three {
   position: absolute;
-  bottom: 50%;
+  bottom: 70%;
   right: 5%;
 }
 
@@ -1246,12 +1275,17 @@ body.ie ._ibg img {
   background: url("../img/section2/logo.png") 50% 180px no-repeat; }
 
 .bio {
-  padding: 180px 0px 65px 0px;
+  margin: 108px 0px 0px 0px;
+  padding: 0px 0px 65px 0px;
 }
 
 .bio__title {
   text-align: center;
   position: relative;
+}
+
+.bio__title img {
+  margin: 0px auto;
 }
 
 .bio__title p {
@@ -1349,10 +1383,6 @@ body.ie ._ibg img {
   color: #2c7135;
 }
 
-.show-more__btn_two {
-  margin: 35px 132px 0px 0px;
-}
-
 .show-more {
   display: none;
   /*   padding-bottom: 15px; */
@@ -1401,6 +1431,10 @@ body.ie ._ibg img {
   position: relative;
   text-align: center;
   padding: 0px 0px 70px 0px;
+}
+
+.advantages__title img {
+  margin: 0px auto;
 }
 
 .advantages__title h3 {
@@ -1863,7 +1897,6 @@ body.ie ._ibg img {
 
 .products-slider__slide img {
   height: 257px;
-  width: 149px;
 }
 
 .po-relative {
@@ -1945,6 +1978,43 @@ body.ie ._ibg img {
     line-height: 15px;
   }
 
+  ._no-webp .advertising{
+    background: url("../img/bg2.png") center no-repeat; }
+
+  .advertising {
+    height: 1846px;
+  }
+
+  .abs-advertising__item_one img {
+    width: auto;
+    height: auto;
+  }
+
+  .abs-advertising__item_two {
+    right: 1%;
+    top: 6%;
+  }
+
+  .abs-advertising__item_two img {
+    width: auto;
+    height: auto;
+  }
+
+  .abs-advertising__item_three img {
+    width: auto;
+    height: auto;
+  }
+
+  .abs-advertising__item_four {
+    right: 20%;
+    top: 29%;
+  }
+
+  .abs-advertising__item_four img {
+    width: auto;
+    height: auto;
+  }
+
   .info-advertising__text_white {
     left: -20%;
     bottom: 15%;
@@ -1957,6 +2027,55 @@ body.ie ._ibg img {
 
   .info-advertising__text_white p span {
     font-size: 100px;
+  }
+
+  .info-advertising__text_yellow {
+    bottom: 5%;
+    width: 666px;
+  }
+
+  .info-advertising__text_yellow p {
+    padding: 26px 41px;
+    max-width: 1000px;
+  }
+
+  .info-advertising__text_transparent {
+    bottom: 0;
+  }
+
+  .advertising-abs__shamp {
+    bottom: -3%;
+  }
+
+  .advertising-abs__boy {
+    bottom: 1%;
+    right: -13%;
+  }
+
+  .advertising-abs__buterfly_one {
+    bottom: 37%;
+    left: 0;
+  }
+
+  .advertising-abs__buterfly_two {
+    bottom: 44%;
+    left: 20%;
+  }
+
+  .advertising-abs__buterfly_three {
+    bottom: 44%;
+    right: 5%;
+  }
+
+  .bio__title img {
+    margin: 0px auto;
+  }
+
+  .bio__title p {
+    font-size: 72px;
+    line-height: 24px;
+    width: 100%;
+    left: 0;
   }
 
   .bio__text p {
@@ -1976,6 +2095,24 @@ body.ie ._ibg img {
     line-height: 20px;
   }
 
+  .bio-last-text p {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .advantages__title img {
+    margin: 0px auto;
+  }
+
+  .advantages__title h3 {
+    left: 24%;
+  }
+
+  .advantages__title h3 {
+    font-size: 72px;
+    line-height: 91px;
+  }
+
   .products__title img {
     height: 155px;
     width: 395px;
@@ -1986,6 +2123,16 @@ body.ie ._ibg img {
     top: 19%;
     font-size: 72px;
     line-height: 91px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .desk {
+    display: block;
+  }
+
+  .descbig {
+    display: none;
   }
 }
 
@@ -2014,6 +2161,11 @@ body.ie ._ibg img {
     margin: 28px 0px 0px -29px;
   }
 
+  .abs-advertising__item_four {
+    right: 22%;
+    top: 21%;
+  }
+
   .advertising-abs__shamp {
     width: 220px;
     height: 150px;
@@ -2028,6 +2180,8 @@ body.ie ._ibg img {
   .bio__title p {
     font-size: 36px;
     line-height: 36px;
+    left: 17%;
+    top: 37%;
   }
 
   .bio__text p {
@@ -2075,7 +2229,7 @@ body.ie ._ibg img {
     position: relative;
     z-index: 200;
     position: fixed;
-    top: 6%;
+    top: 0;
     right: 0%;
     width: 100%;
     height: 100%;
@@ -2105,6 +2259,15 @@ body.ie ._ibg img {
   .header__logo img {
     height: 95px;
     width: 131px;
+  }
+
+  .header__link {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .specialheaderlink {
+    max-width: 291px;
   }
 
   .link-hv {
@@ -2137,7 +2300,7 @@ body.ie ._ibg img {
     width: 30px;
     height: 20px;
     cursor: pointer;
-    z-index: 200;
+    z-index: 201;
   }
 
   .icon-menu span {
@@ -2288,6 +2451,7 @@ body.ie ._ibg img {
   .bio {
     background: #fff !important;
     padding: 20px 0px 65px 0px;
+    margin: 0;
   }
 
   .bio-info__top {
@@ -2337,6 +2501,11 @@ body.ie ._ibg img {
     padding: 0 10px;
   }
 
+  .btn {
+    margin: 35px auto 0px auto;
+    display: block;
+  }
+
   .footer {
     padding: 0px 0px 55px 0px;
   }
@@ -2366,12 +2535,20 @@ body.ie ._ibg img {
     line-height: 9px;
   }
 
+  .desc-img {
+    display: none;
+  }
+
+  .mob-img {
+    display: block;
+  }
+
   .bio__title p {
     width: 100%;
     max-width: 266px;
     margin: 0px auto;
     top: 24%;
-    left: 14%;
+    left: 27%;
   }
 
   .advantages__title h3 {
@@ -2475,6 +2652,12 @@ body.ie ._ibg img {
     top: 49%;
     left: 35%;
   }
+
+  .slider-pagging {
+    width: 100%;
+    bottom: -18%;
+    left: 62%;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -2521,14 +2704,6 @@ body.ie ._ibg img {
   .abs-advertising__item_four img {
     width: auto;
     height: auto;
-  }
-
-  .desc-img {
-    display: none;
-  }
-
-  .mob-img {
-    display: block;
   }
 
   .info-advertising__text_white {
@@ -2578,7 +2753,7 @@ body.ie ._ibg img {
   }
 }
 
-._webp .advertising{ background: url(../img/bg2.webp) center no-repeat; }
+._webp .advertising{ background: url(../img/bgdesc.webp) center no-repeat; }
 
 ._webp .bio{ background: url(../img/section2/logo.webp) 50% 180px no-repeat; }
 
@@ -2591,6 +2766,11 @@ body.ie ._ibg img {
 ._webp .title-icons_four:after{ background: url(../img/icons/icon4.webp) right no-repeat; }
 
 ._webp .products{ background: url(../img/section4/bg.webp) no-repeat; }
+
+@media (min-width: 1500px){
+
+  ._webp .advertising{ background: url(../img/bg2.webp) center no-repeat; }
+}
 
 @media (max-width: 991.98px){
 

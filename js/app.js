@@ -79,10 +79,19 @@ if (iconMenu != null) {
 };
 function menu_close() {
 	let iconMenu = document.querySelector(".icon-menu");
-	let menuBody = document.querySelector(".header__list");
+	let menuBody = document.querySelector(".header__nav");
 	iconMenu.classList.remove("_active");
 	menuBody.classList.remove("_active");
 }
+
+let menuBody = document.querySelector(".header__list");
+
+menuBody.addEventListener("click", function (e) {
+	menuBody.classList.remove("_active");
+});
+
+
+
 //=================
 //BodyLock
 function body_lock(delay) {
