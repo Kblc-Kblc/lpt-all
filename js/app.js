@@ -89,12 +89,12 @@ let noLink = document.querySelector(".nolink");
 
 menuBody.addEventListener("click", function (e) {
 	console.log(e.noLink, '++++');
-	if (e.noLink) {
+	// if (e.noLink) {
 		menuBody.classList.remove("_active");
 		iconMenu.classList.remove("_active");
 		let body = document.querySelector("body");
 		body.classList.remove("_lock");
-	}
+	// }
 	
 	
 	
