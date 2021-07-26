@@ -1155,6 +1155,10 @@ body.ie ._ibg img {
   display: none;
 }
 
+.fullmob_special {
+  display: none;
+}
+
 .mainmob {
   display: none;
 }
@@ -1199,6 +1203,7 @@ body.ie ._ibg img {
   bottom: 13%;
   left: 50%;
   width: 37%;
+  z-index: 3;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1969,6 +1974,105 @@ body.ie ._ibg img {
      object-fit: cover;
 }
 
+.frist-info {
+  height: 77vh;
+  margin: 0px 0px 80px 0px;
+  z-index: -1;
+}
+
+.plash-abs {
+  height: 110px;
+}
+
+.content-abs {
+  position: relative;
+}
+
+.content-abs__boy {
+  position: absolute;
+  right: 0;
+  top: -450px;
+  z-index: 99;
+}
+
+.content-abs__shamp {
+  position: absolute;
+  left: 0;
+  top: -188px;
+}
+
+.content-abs__text_yellow {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  text-align: center;
+  text-transform: uppercase;
+  color: #0b6117;
+  padding: 28px 25px;
+  background: #ffe927;
+  -webkit-box-shadow: 0px 8px 40px 3px #634e07;
+          box-shadow: 0px 8px 40px 3px #634e07;
+  border-radius: 25px;
+  position: absolute;
+  top: -56%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.content-abs__text_yellow p {
+  max-width: 655px;
+}
+
+.content-abs__text_yellow p span {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.plash-abs {
+  z-index: -1;
+}
+
+.content-abs-text {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.content-abs-text__text_top {
+  padding: 0px 0px 5px 0px;
+}
+
+.content-abs-text__text_top p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 26px;
+  /* identical to box height, or 108% */
+  text-align: center;
+  color: #ffffff;
+}
+
+.content-abs-text__text_bot p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 26px;
+  /* identical to box height, or 72% */
+  text-align: center;
+  color: #ffffff;
+}
+
+.content-abs-text__text_bot p span {
+  color: #ffe927;
+}
+
 @media (min-width: 991.98px) {
   .quantity__button:hover::before,
   .quantity__button:hover::after {
@@ -2167,6 +2271,99 @@ body.ie ._ibg img {
   .advertising-abs__buterfly_three {
     bottom: 33%;
     right: 5%;
+  }
+}
+
+@media (min-height: 1080px) and (min-width: 1920px) {
+  .content-abs__boy {
+    /* CSS stuff */
+    right: 19%;
+  }
+
+  .content-abs__shamp {
+    /* CSS stuff */
+    right: 19%;
+    left: 0px;
+    top: -188px;
+  }
+
+  .content-abs__text_yellow {
+    /* CSS stuff */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    text-align: center;
+    text-transform: uppercase;
+    color: #0b6117;
+    padding: 28px 25px;
+    background: #ffe927;
+    -webkit-box-shadow: 0px 8px 40px 3px #634e07;
+            box-shadow: 0px 8px 40px 3px #634e07;
+    border-radius: 25px;
+    position: absolute;
+    top: -56%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  .content-abs__text_yellow p {
+    max-width: 655px;
+  }
+
+  .content-abs__text_yellow p span {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .content-abs-text {
+    /* CSS stuff */
+    top: 49%;
+    left: 50%;
+  }
+}
+
+@media (max-height: 1080px) and (min-width: 1920px) {
+  .content-abs__boy {
+    /* CSS stuff */
+    right: 19%;
+  }
+
+  .content-abs__text_yellow {
+    /* CSS stuff */
+    top: -56%;
+  }
+}
+
+@media (max-height: 993px) and (min-width: 1920px) {
+  .content-abs__boy {
+    /* CSS stuff */
+    right: 21%;
+  }
+
+  .content-abs__text_yellow {
+    /* CSS stuff */
+    left: 45%;
+  }
+}
+
+@media (max-height: 922px) and (min-width: 1920px) {
+  .content-abs__boy {
+    /* CSS stuff */
+    right: 23%;
+  }
+
+  .content-abs__text_yellow {
+    /* CSS stuff */
+    top: -56%;
+  }
+
+  .content-abs-text {
+    /* CSS stuff */
+    left: 45%;
   }
 }
 
@@ -2402,6 +2599,10 @@ body.ie ._ibg img {
     display: none;
   }
 
+  .bio {
+    padding: 0px 0px 27px 0px;
+  }
+
   .bio__title p {
     font-size: 36px;
     line-height: 36px;
@@ -2421,6 +2622,10 @@ body.ie ._ibg img {
   .bio-info__top {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+
+  .advantages__title {
+    padding: 0px 0px 18px 0px;
   }
 }
 
@@ -2751,6 +2956,10 @@ body.ie ._ibg img {
     top: 29%;
   }
 
+  .fullmob_special {
+    display: block;
+  }
+
   .info-advertising__text_transparent {
     bottom: -7% !important;
   }
@@ -2758,6 +2967,20 @@ body.ie ._ibg img {
   .advertising-text_top {
     max-width: 207px;
     margin: 0px auto;
+  }
+
+  .advertising-abs__boy {
+    bottom: 20%;
+  }
+
+  .advertising-abs__buterfly_two {
+    bottom: 36%;
+    left: 46%;
+  }
+
+  .advertising-abs__buterfly_three {
+    bottom: 26%;
+    right: -2%;
   }
 
   .bio__title p {
